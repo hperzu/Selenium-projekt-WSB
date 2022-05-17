@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-05-17 13:52:12</p>
+                <p class='attribute'><strong>Duration: </strong>13.59 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 2, Fail: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>test.login.Login</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login_happy_path</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login_with_locked_out_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 5.55 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>test.inventory.Inventory</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_compare_inventory_images</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: Lists differ: ['htt[32 chars]dia/sauce-backpack-1200x1500.34e7aa42.jpg', 'h[374 chars]jpg'] != ['htt[32 chars]dia/sl-404.168b1cce.jpg', 'https://www.saucede[284 chars]jpg']
+
+First differing element 0:
+'https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.34e7aa42.jpg'
+'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg'
+
++ ['https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
+- ['https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.34e7aa42.jpg',
+-  'https://www.saucedemo.com/static/media/bike-light-1200x1500.a0c9caae.jpg',
+-  'https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c0dae290.jpg',
+-  'https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.439fc934.jpg',
+-  'https://www.saucedemo.com/static/media/red-onesie-1200x1500.1b15e1fa.jpg',
+?                                          ^^^ ^^^^^^^^^ ^^^^^^    ^ ---
+
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
+?                                          ^^ ^ ^  ++  ^^
+
+-  'https://www.saucedemo.com/static/media/red-tatt-1200x1500.e32b4ef9.jpg']
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg']</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/hubert/PycharmProjects/ProjektWSB/test/inventory.py", line 20, in test_compare_inventory_images
+    self.assertEqual(standard_img_src, problem_img_src)
+AssertionError: Lists differ: ['htt[32 chars]dia/sauce-backpack-1200x1500.34e7aa42.jpg', 'h[374 chars]jpg'] != ['htt[32 chars]dia/sl-404.168b1cce.jpg', 'https://www.saucede[284 chars]jpg']
+
+First differing element 0:
+'https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.34e7aa42.jpg'
+'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg'
+
++ ['https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
+- ['https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.34e7aa42.jpg',
+-  'https://www.saucedemo.com/static/media/bike-light-1200x1500.a0c9caae.jpg',
+-  'https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c0dae290.jpg',
+-  'https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.439fc934.jpg',
+-  'https://www.saucedemo.com/static/media/red-onesie-1200x1500.1b15e1fa.jpg',
+?                                          ^^^ ^^^^^^^^^ ^^^^^^    ^ ---
+
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
+?                                          ^^ ^ ^  ++  ^^
+
+-  'https://www.saucedemo.com/static/media/red-tatt-1200x1500.e32b4ef9.jpg']
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg',
++  'https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg']
+
+
+====== WebDriver manager ======
+Current google-chrome version is 101.0.4951
+Get LATEST chromedriver version for 101.0.4951 google-chrome
+Driver [/home/hubert/.wdm/drivers/chromedriver/linux64/101.0.4951.41/chromedriver] found in cache
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Fail: 1 -- Duration: 3.70 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>test.cart.Cart</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_cart_happy_path</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AttributeError: 'Cart' object has no attribute 'log'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/hubert/PycharmProjects/ProjektWSB/test/cart.py", line 27, in test_cart_happy_path
+    self.display_products()
+  File "/home/hubert/PycharmProjects/ProjektWSB/utils/base_command.py", line 67, in display_products
+    self.log.info(f"Item: {items_list[i].text}, Quantity: {quantity_list[i].text}, Price: {prices_list[i].text}")
+AttributeError: 'Cart' object has no attribute 'log'
+
+
+====== WebDriver manager ======
+Current google-chrome version is 101.0.4951
+Get LATEST chromedriver version for 101.0.4951 google-chrome
+Driver [/home/hubert/.wdm/drivers/chromedriver/linux64/101.0.4951.41/chromedriver] found in cache
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 4.35 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

@@ -34,5 +34,9 @@ class Cart(BaseCommand):
 
         self.assertEqual(round(total - item_total, 2), tax)
 
+        self.click_element("//button[@id='finish']")
+        self.element_is_visible("//img[@alt='Pony Express']")
+
+
 if __name__ == '__main__':
     unittest.main()

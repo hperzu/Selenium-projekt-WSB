@@ -1,4 +1,3 @@
-import unittest
 from unittest import TestLoader, TestSuite
 from HtmlTestRunner import HTMLTestRunner
 from test import login, inventory, cart

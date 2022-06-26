@@ -20,7 +20,6 @@ runner = HTMLTestRunner(
     report_name='report'
 )
 
-runner.run(suite)
 
 if __name__ == '__main__':
-    unittest.main()
+    runner.run(suite)
